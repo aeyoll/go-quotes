@@ -1,0 +1,19 @@
+{
+  "name": "quotes",
+  "version": "0.0.0",
+  "homepage": "https://github.com/aeyoll/go-quotes",
+  "authors": [
+    "Jean-Philippe Bidegain <jp@bidega.in>"
+  ],
+  "private": true,
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
