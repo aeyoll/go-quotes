@@ -4,6 +4,7 @@ import (
   "github.com/go-martini/martini"
   "github.com/martini-contrib/binding"
   "github.com/martini-contrib/render"
+  "github.com/martini-contrib/gzip"
   "labix.org/v2/mgo"
 )
 
@@ -31,6 +32,8 @@ func GetAll(db *mgo.Database) []Quote {
 
 func main() {
   m := martini.Classic()
+
+  m.Use(gzip.All())
 
   // render html templates from templates directory
   m.Use(render.Renderer(render.Options{
